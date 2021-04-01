@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
 
 /**
  *
@@ -38,9 +39,27 @@ public class TestingTest {
     }
 
     @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void Failingtest() {
+        fail("Hello Mr A this test will fail");
     }
-    
+    @Test
+    public void testEquality(){
+        String obj1 = "Junit";
+        String obj2 = "Junit";
+        assertEquals(obj1, obj2);
+    }
+    @Test
+    public void testIdentity(){
+        String obj3 = "Kevin";
+        String obj4 = "Kevin";
+        assertSame(obj3, obj4);
+    }
+    @Test
+    @Disabled
+    public void disabledTest(){
+     int a = 12;
+     int b = 10;
+     int sum = a + b;
+        System.out.println("The Sum of a + b = " +sum);
+    }
 }
