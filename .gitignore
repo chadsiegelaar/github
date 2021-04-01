@@ -1,4 +1,3 @@
-#Files and folders to be ignored by GIT
-
-#Netbeans specific folders and files
+#Files and Folders will be ignored by git
 /nbproject/
+/target/
